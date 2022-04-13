@@ -1,0 +1,245 @@
+/*General settings*/
+.subpage-content-container {
+    position: relative;
+}
+
+.subpage-content {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.325);
+    width: 50vw;
+    height: fit-content;
+    margin: auto;
+    position: relative; top: -35vh;
+    padding-bottom: 5%;
+
+}
+
+.subpage-content h1 {
+    color: #105B34;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 3vw, 1.7rem);
+    padding-top: 5%;
+}
+
+/* About page */
+.about {
+    color: #105B34;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);   
+}
+
+.about p {
+    width: 60%;
+    padding: 5%;
+    margin: auto;
+    line-height: 200%;
+    border: solid 2px #105B34;
+    border-radius: 5px;    
+}
+
+/* Contact page */
+.contact input, .contact textarea{
+    display: block;
+    width: 100%;
+    border: solid 2px #105B34;
+    border-radius: 3px;
+    margin-bottom: 3%;
+}
+
+.contact label {
+    color: #105B34;
+    text-transform: uppercase;
+    
+}
+
+#contact-button {
+    background-color: #105B34;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    height: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.323);
+    width: 101%;
+}
+
+#contact-button:hover {
+    background-color: #0b4125;
+    cursor: pointer;
+}
+
+.contact form {
+    width: 60%;
+    margin: auto;
+}
+
+/*News page */
+.news-subpage {
+    width: fit-content;
+    margin: 0 30px 20px 15px;
+}
+
+.news-subpage-container {
+    height: 700px;
+    width: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: #fff solid 15px;
+    
+}
+
+
+
+.news-subpage-container h1 {
+    margin-bottom: 5%;
+    margin-top: -10px;
+}
+
+.news-subpage-container::-webkit-scrollbar {
+    width: 1vw;
+    }
+
+    .news-subpage-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.514); 
+    
+    }
+    .news-subpage-container::-webkit-scrollbar-thumb {
+    background: #0b4125; 
+    
+    }
+    .news-subpage-container::-webkit-scrollbar-thumb:hover {
+    background: #105B34; 
+    cursor: pointer;
+    }
+
+    /* Media queries for news page*/
+    @media screen and (min-width: 1100px) and (max-width: 1500px) {
+        .news-subpage {
+            height: 220px;   
+        }
+        .news-subpage-container::-webkit-scrollbar {
+            width: 1.5vw;
+            }
+
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1100px) {
+        .news-subpage {
+            height: 180px;   
+        }
+        .news-subpage-container::-webkit-scrollbar {
+            width: 1.5vw;
+            }
+
+    }
+
+
+/*Single news page*/
+.single-news-container {
+    width: fit-content;
+    
+}
+
+.single-news {
+    margin: 0px 20px 20px 20px;
+    box-shadow: none;
+    width: 70vw;
+    padding-left: 5px;
+    background-color: #fff;
+    display: flex;
+
+}
+
+.news-right-single {
+    margin-top: 8.5%;
+    position: relative;}
+
+.news-left-single p{
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    max-height: 120px;
+    margin-bottom: 10px;
+    line-height: 150%;
+    margin-bottom: 20%;
+    height: fit-content;
+    
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+    .news-right-single {
+        width: 45%;
+        margin-top: 8%;
+    }
+    
+    .news-left-single {
+        width: 55%;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .single-news {
+        height: 700px;
+        width: 80%;
+    
+    }
+    .news-right-single, .news-left-single {
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .news-right-single {
+        position: absolute; bottom: 20px;
+        
+        
+    }
+
+    
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+
+    .subpage-content {
+        width: 70vw;
+        position: relative; top: -25vh;
+    }
+
+    .contact form {
+        width: 75%;
+    }
+
+    .news-subpage-container {
+        width: 80%;       
+    }
+
+   
+
+    
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .subpage-content {
+        width: 80vw;
+        position: relative; top: -10vh; 
+    }
+
+    .contact form {
+        width: 80%;
+    }
+
+    .news-subpage-container::-webkit-scrollbar {
+        width: 2.5vw;
+        }
+
+
+    .news-left-single p{ 
+        line-height: 120%;
+        position: relative;
+    }
+    
+
+}

@@ -1,0 +1,163 @@
+.news {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    background-color: #E8E6D8;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.359);
+    position: relative;
+}
+
+.news-left, .news-left-single {
+    width: 68%;
+    margin-right: 5%;
+}
+
+.news-left h3, .news-left-single  {
+    margin-bottom: 0.5%;
+    margin-top: -6px;
+    font-size: clamp(0.8rem, 2.7vw, 1.2rem);
+}
+
+.news-left i, .news-left-single  {
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+
+}
+
+.news-left p{
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    max-height: 120px;
+    margin-bottom: 10px;
+    overflow:hidden; 
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.news-right {
+    width: 32%;
+
+    
+}
+
+.news-right img {
+    width: 100%;
+}
+
+.news-right a {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    background-color: #DB5E54;
+    width: max(150px, 15vw);
+    height: 18px;
+    position: absolute; bottom: 20px; left: 30px;
+    border-style: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.402);
+}
+
+.allnews_button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: clamp(0.8rem, 2.3vw, 1.1rem);
+}
+
+.allnews_button a{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #DB5E54;
+    padding: 5px 40px 3px 40px;
+    border-style: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+    height: 22px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.402);
+
+}
+
+.allnews_button a:hover, .news-right a:hover {
+    cursor: pointer;
+    background-color: #b94b44;
+}
+
+@media  screen and (min-width: 900px) and (max-width: 1100px) {
+    .news {
+        display: flex;
+        
+    }
+
+    .news-left {
+        width: 65%;
+    }
+
+    .news-left p {
+        max-height:100px;
+        margin-top: 3px;
+
+    }
+
+    .news-right {
+        width: 35%;
+        margin-top: 3.5%;
+    }
+    
+}
+
+@media  screen and (min-width: 700px) and (max-width: 900px) {
+    .news {
+        display: flex;
+    }
+
+    .news-left {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    .news-left p {
+        max-height: 60px;
+        margin-top: 3px;
+
+    }
+
+    .news-right {
+        width: 30%;
+        margin-top: 3.5%;
+    }
+
+ 
+    
+    
+}
+
+@media  screen and (max-width: 700px) {
+    .news {
+        display: block;
+        
+    }
+
+    .news-left, .news-right {
+        width: 100%;
+        position: relative;
+    }
+
+    .news-right img {
+        margin-top: 3%;
+    }
+
+    .news-right a {
+        position: absolute;  bottom: 15px; left: 15px; right: 10px;
+        width: 85%;
+        
+        
+        
+    }
+    
+}

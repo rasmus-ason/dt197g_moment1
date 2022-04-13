@@ -1,0 +1,54 @@
+
+.circles {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.circles div {
+    position: relative; 
+    margin: auto;
+}
+
+.circles div:hover {
+    opacity: 0.9;
+}
+    
+.circles img {
+    color: #fff;
+    width: max(150px,18vw);
+    height: max(150px,18vw);
+    border-radius: 50%;
+    object-fit: fill;
+    }    
+
+    .circles a:hover {
+        color: #fff;
+        cursor: pointer;
+        }
+
+        .circles h3 {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.737); width: 102%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        left: 50%;
+        top: 39%;
+        transform: translate(-50%, -50%);
+        font-size: clamp(0.7rem, 2vw, 1.5rem);
+        text-transform: uppercase;
+        text-align: center;
+        color:#105B34;
+        }   
+        
+@media screen and (max-width: 500px) {
+
+    .circles img {
+        width: max(100px,28vw);
+        height: max(100px,28vw);
+        
+        }  
+
+}
+    
